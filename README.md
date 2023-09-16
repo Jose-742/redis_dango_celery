@@ -38,3 +38,7 @@ segundo plano escaláveis e distribuídos em uma aplicação Django. Aqui estão
     Isso o torna ideal para o gerenciamento de tarefas em fila e também para outras funcionalidades em tempo real, como atualizações em tempo real de aplicativos da web.
   
   Em resumo, o Redis é usado como um meio para armazenar e gerenciar as tarefas enfileiradas pelo Celery em uma aplicação Django. Ele atua como um "broker" confiável que permite que as tarefas sejam distribuídas e processadas de forma assíncrona e escalável. O Celery, por sua vez, é o mecanismo que permite que você defina, enfileire e execute essas tarefas em segundo plano. Juntos, o Redis e o Celery tornam sua aplicação mais eficiente e escalável, permitindo que você execute tarefas demoradas sem afetar a capacidade de resposta de sua aplicação principal.
+
+https://pypi.org/project/redis/
+https://www.codingforentrepreneurs.com/blog/celery-redis-django/
+https://www.codingforentrepreneurs.com/blog/redis-on-windows/
