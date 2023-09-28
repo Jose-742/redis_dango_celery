@@ -62,10 +62,11 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'project.urls'
 
+#'DIRS': [ BASE_DIR / 'base_template/templates'],
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [ BASE_DIR / 'apps.base.templates'],
+        'DIRS': [BASE_DIR / 'apps/base/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -129,6 +130,12 @@ CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TIMEZONE = TIME_ZONE
+
+# configuração do django-admin-soft-dashboard
+# ao usuario efetuar o login ele redireciona para a pagina home
+LOGIN_REDIRECT_URL = '/home/'
+EMAIL_BACKEND  =  'django.core.mail.backends.console.EmailBackend'
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
